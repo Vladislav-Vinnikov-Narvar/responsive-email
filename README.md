@@ -202,3 +202,36 @@ Outlook does not support fonts, instead of a fallback displays Times New Roman
   /** Insert styles here/
 }
 ```
+#### Video
+- supported only in Apple Mail and IOS Mail
+- use webkit Targeting
+
+#### Responsive email design
+Media queries supported by
+- Android 2.2, 2.3, 4.0, 4.1, 4.2
+- iPhone/iPad email app
+Media queries not supported by
+ - Yahoo (iOS and Android)
+ - Mailbox (iOS)
+ - Gmail
+ - Inbox by Gmail
+
+Yahoo mail displays responsive version of email to everyone
+Solution
+- !important overrides inline styles
+```
+img[class="img-max"] {
+  width: 100% !important; height: auto !important;
+}
+```
+iPhone text resizing - fonts < 13px become 13px
+```
+-webkit-text-size-adjust: none;
+-webkit-text-size-adjust: 100%;
+```
+iOS adding helpful links for date ranges, tracking  numbers, phones etc
+that makes text unreadable -> Solution
+```
+.appleBody a {
+  color: #ffffff; text-decoration: none;
+}
