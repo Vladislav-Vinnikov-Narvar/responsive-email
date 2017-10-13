@@ -192,7 +192,7 @@ Outlook does not support fonts, instead of a fallback displays Times New Roman
 | Outlook 2010 | Version 14 |
 | Outlook 2013 | Version 15 |
 
-```
+```css
 /* All of Webkit media query */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .display { display:block !important; }
@@ -202,6 +202,7 @@ Outlook does not support fonts, instead of a fallback displays Times New Roman
   /** Insert styles here/
 }
 ```
+
 #### Video
 - supported only in Apple Mail and IOS Mail
 - use webkit Targeting
