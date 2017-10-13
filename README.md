@@ -287,7 +287,9 @@ iPhone text resizing - fonts < 13px become 13px
 ```
 iOS adding helpful links for date ranges, tracking  numbers, phones etc
 that makes text unreadable -> Solution
-```
+
+```css
 .appleBody a {
   color: #ffffff; text-decoration: none;
 }
+```
