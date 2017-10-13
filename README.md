@@ -216,6 +216,61 @@ Media queries not supported by
  - Gmail
  - Inbox by Gmail
 
+```css
+@media screen and (max-width: 600px) {
+  /* Center logo image */
+  td[class="logo"] img {
+    margin: 0 auto !important;
+  }
+
+  /* Columns are taking full width on mobile */
+  table[class="wrapper"] {
+    width: 100% !important;
+  }
+
+  /* left and right padding for columns containing image */
+  td[class="mobile-image-pad"] {
+    padding: 0 10px 0 10px !important;
+  }
+
+  /* top, left, and right padding for the cell containing title
+   * -> centers title **/
+  td[class="mobile-title-pad"] {
+    padding: 30px 10px 0px 10px !important;
+  }
+
+ /* top, left, right padding for cells with text */
+  td[class="mobile-text-pad"] {
+    padding: 10px 10px 10px 10px !important;
+  }
+
+  /* space for the second column */
+  td[class="mobile-column-right"] {
+    padding-top: 20px !important;
+  }
+
+  /* Images take full width of a container */
+  img[class="fluid-image"] {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Hiding non-essential content */
+  td[class="hide"] {
+    display: none !important;
+  }
+
+  /* Make buttons wider and larger */
+  td[class="mobile-button"] {
+    padding: 12px 60px 12px 60px !important;
+  }
+
+  td[class="mobile-button"] a {
+    font-size: 24px !important;
+  }
+}
+```
+
 Yahoo mail displays responsive version of email to everyone
 Solution
 - !important overrides inline styles
