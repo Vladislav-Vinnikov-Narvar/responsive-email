@@ -266,6 +266,7 @@ Media queries not supported by
     padding: 12px 60px 12px 60px !important;
   }
 
+  /* Increase the font size making it easier to read and use */
   td[class="mobile-button"] a {
     font-size: 24px !important;
   }
